@@ -1,0 +1,19 @@
+      //to print the elements of an array present on even position
+      
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        int [] arr ={1, 2, 3, 2, 5,1};    //create an array
+        //it has upto 6 positions (1-5)
+        //it has upto 5 index (0-5)
+
+        for (int i=1;i< arr.length;i++){   //arr.length give total positon
+            if(i%2!=0){      
+                System.out.println(arr[i]);
+            }
+        }
+    }
+}
+_________________________________________________________________________________________________________________________________________________________________________________
