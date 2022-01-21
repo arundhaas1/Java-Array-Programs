@@ -1,2 +1,25 @@
         //find the frequency of each element in the array
         
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args){
+        int [] array={1,2,1,4,2};
+        int count=0;
+
+
+        for (int i=0;i<array.length;i++){
+            int digit=0;    //it is the index of the number in which the frequency is to be calculated
+            if(array[digit]==array[i]){
+                count++;
+            }
+            digit++;
+
+
+        }
+        System.out.println("the frequency is "+count);
+
+    }
+}
+______________________________________________________________________________________________________________________________________________________________
