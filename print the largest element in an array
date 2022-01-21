@@ -16,3 +16,25 @@ public  class Main {
         System.out.println(largestNum);
     }
 }
+
+_______________________________________________________________________________________________________________________________________________________________________________
+      //print the smallest element in an array
+
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    static int smallestNum;
+    public static void main(String[] args) {
+        int [] arr ={1, 2, 3, 2, 5, 1, 9,0};    //create an array
+        for (int i=0;i< arr.length;i++){
+            smallestNum=arr[0];
+            if(smallestNum>arr[i]) {
+                smallestNum = arr[i];
+            }
+
+        }
+        System.out.println(smallestNum);
+    }
+}
+_________________________________________________________________________________________________________________________________________________________________________
