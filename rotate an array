@@ -1,0 +1,26 @@
+      //rotate an array
+      
+      Original Array:
+      1   2   3   4   5
+      Array after left rotation: ( when n=3 )
+      4   5   1   2   3
+      
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        int [] arr ={1, 2, 3, 4, 5};    //create an array
+        int n = 3;    //no.of division to be rotated
+
+       for(int j=0;j<3;j++){   //this loop for rotate n times
+           int firstArray=arr[0];   //first digit is copied and moved to last index of the array
+           for (int i=0;i<arr.length-1;i++){   //this loop for rotate 1 index forward
+               arr[i]=arr[i+1];  //moved 1 digit forward
+           }
+           arr[arr.length-1]=firstArray;   //first digit is copied and placed in last index of the array
+       }
+        System.out.println(Arrays.toString(arr));
+    }
+}
+_____________________________________________________________________________________________________________________________________________________________________________
