@@ -1,0 +1,18 @@
+      //print the largest element in an array
+      
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        int [] arr ={1, 2, 3, 2, 5, 1, 9};    //create an array
+        int largestNum=0;         //declare an variable of largest number
+        for (int i=0;i< arr.length;i++){
+            if(largestNum<arr[i]) {    //check against all the digits
+                largestNum = arr[i];   //if one is greater then the largest num is replaced by that value
+            }
+
+        }
+        System.out.println(largestNum);
+    }
+}
