@@ -1,4 +1,4 @@
-    //sort the numbers of an array in ascending order
+
     
 package com.dhas;
 import java.util.Arrays;
@@ -21,6 +21,24 @@ public  class Main {
     }
 
 }
+________________________________________________________________________________________________________________________________________________________________________
+
+    //sort the numbers of an array in ascending order
+    
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        int[] array = {4, 3, 7, 8, 3, 9};
+        int temp = 0;
+        Arrays.sort(array);   //by using Arrays.sort(a) method
+
+        System.out.println(Arrays.toString(array));
+    }
+
+}
+
 _________________________________________________________________________________________________________________________________________________________________________
     //sort the numbers of an array in decending order
 
