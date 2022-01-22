@@ -1,0 +1,48 @@
+    //sort the numbers of an array in ascending order
+    
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        int [] array={4,3,7,8,3,9};
+        int temp=0;   
+
+        for (int i = 0; i < array.length; i++) {               //this two loops to equate all elements with all elements
+            for (int j = i+1; j < array.length; j++) {
+                if(array[i] > array[j]) {
+                    temp = array[i];  //if a[i] is greater  then copied to a varialbe
+                    array[i] = array[j];   //a[j] is moved before since it is smaller
+                    array[j] = temp;  //  copied num is moved to the right of a[j]
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+}
+_________________________________________________________________________________________________________________________________________________________________________
+    //sort the numbers of an array in decending order
+
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+public  class Main {
+    public static void main(String[] args) {
+        int [] array={4,3,7,8,3,9};
+        int temp=0;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i+1; j < array.length; j++) {
+                if(array[i] < array[j]) {  //only this change
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+}
+_________________________________________________________________________________________________________________________________________________________________________
