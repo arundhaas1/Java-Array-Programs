@@ -64,3 +64,22 @@ public  class Main {
 
 }
 _________________________________________________________________________________________________________________________________________________________________________
+ 
+ //sort the numbers of an array in decending order
+
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Collections;
+public  class Main {
+    public static void main(String[] args) {
+        Integer[] array = {4, 3, 7, 8, 3, 9};  //must be Integer instead of int
+        int temp = 0;
+        Arrays.sort(array,Collections.reverseOrder());      //Arrays.sort(array,Collections.reverseOrder()) called for decending order
+
+        System.out.println(Arrays.toString(array));
+    }
+
+}
+
+___________________________________________________________________________________________________________________________________________________________________________
